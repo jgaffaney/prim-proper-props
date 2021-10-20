@@ -1,11 +1,13 @@
+import SilverWare from '../SilverWare/SilverWare'
+
 export default function DinnerSupplies({guestList}) {
 
+    let count = guestList.length * 2;
+    console.log('count in dinnersupplies is: ', count)
     return (
         <> 
             <h2>Dinner Supplies</h2>
-            <div>
-                Spoons: {guestList.length * 2}
-            </div>
+            <SilverWare name="Spoons" count={count} />
             <div>
                 Forks: {guestList.length * 2}
             </div>
