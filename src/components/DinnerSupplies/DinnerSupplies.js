@@ -8,12 +8,9 @@ export default function DinnerSupplies({guestList}) {
         <> 
             <h2>Dinner Supplies</h2>
             <SilverWare name="Spoons" count={count} />
-            <div>
-                Forks: {guestList.length * 2}
-            </div>
-            <div>
-                Knives: {guestList.length * 2}
-            </div>
+            <SilverWare name="Forks" count={count} />
+            <SilverWare name="Knives" count={count} />
+
         </>
     )
 }
